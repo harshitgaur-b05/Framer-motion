@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "motion": "^12.23.0",
+    "@tailwindcss/vite": "^4.1.17",
+    "motion": "^12.23.24",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
