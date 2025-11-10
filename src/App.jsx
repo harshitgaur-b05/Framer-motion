@@ -67,7 +67,7 @@ const App = () => {
     // </div>
     <>
     {/* <Component/> */}
-    <div className='w-full min-h-screen '>    <Component2/></div>
+    <div className=' '>    <Component2/></div>
 
     </>
   )
