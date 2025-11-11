@@ -4,6 +4,7 @@ import './App.css'
 import ScrollComponent from './scroll/ScrollComponent'
 import Component from './components/Component1'
 import Component2 from './components/Component2'
+import Dashboard from './dashboard/Dashboard'
 const App = () => {
 
   return (
@@ -67,7 +68,9 @@ const App = () => {
     // </div>
     <>
     {/* <Component/> */}
-    <div className=' '>    <Component2/></div>
+    {/* <div className=' '>    <Component2/></div> */}
+    <Dashboard/>
+
 
     </>
   )
