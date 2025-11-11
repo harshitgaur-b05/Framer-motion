@@ -12,16 +12,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, activeTab, setActiveTab }) => {
 
   return (
     <div
-      className={`${
-        sidebarOpen ? 'w-64' : 'w-20'
-      } bg-gradient-to-b from-blue-600 to-blue-800 text-white transition-all duration-300 ease-in-out flex flex-col`}
+      className={`${sidebarOpen ? 'w-64' : 'w-20'
+        } bg-linear-to-b from-blue-600 to-blue-800 text-white transition-all duration-300 ease-in-out flex flex-col`}
     >
       {/* Sidebar Header */}
       <div className="flex items-center justify-between p-4 border-b border-blue-500">
         <h1
-          className={`font-bold text-xl transition-opacity duration-300 ${
-            sidebarOpen ? 'opacity-100' : 'opacity-0 w-0'
-          }`}
+          className={`font-bold text-xl transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0 w-0'
+            }`}
         >
           MyApp
         </h1>
@@ -41,17 +39,15 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, activeTab, setActiveTab }) => {
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
-              className={`w-full flex items-center gap-4 p-3 rounded-lg transition-all ${
-                activeTab === item.id
+              className={`w-full flex items-center gap-4 p-3 rounded-lg transition-all ${activeTab === item.id
                   ? 'bg-blue-700 shadow-lg'
                   : 'hover:bg-blue-700/50'
-              }`}
-            >
-              <Icon size={20} className="flex-shrink-0" />
-              <span
-                className={`transition-opacity duration-300 ${
-                  sidebarOpen ? 'opacity-100' : 'opacity-0 w-0'
                 }`}
+            >
+              <Icon size={20} className="shrink-0" />
+              <span
+                className={`transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0 w-0'
+                  }`}
               >
                 {item.label}
               </span>
@@ -67,9 +63,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, activeTab, setActiveTab }) => {
             <span className="font-semibold">JD</span>
           </div>
           <div
-            className={`transition-opacity duration-300 ${
-              sidebarOpen ? 'opacity-100' : 'opacity-0 w-0'
-            }`}
+            className={`transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0 w-0'
+              }`}
           >
             <p className="font-medium text-sm">John Doe</p>
             <p className="text-xs text-blue-200">john@example.com</p>
